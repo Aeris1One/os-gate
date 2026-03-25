@@ -1,0 +1,5 @@
+Gate is a modern Minecraft reverse proxy. This plugin enables Gate Lite mode
+on OPNsense, providing host-based connection routing for Minecraft servers
+through the OPNsense WebUI.
+
+WWW: https://gate.minekube.com/

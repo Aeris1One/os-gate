@@ -1,0 +1,20 @@
+<form>
+    <field>
+        <id>general.enabled</id>
+        <label>Enable Gate</label>
+        <type>checkbox</type>
+        <help>Enable or disable the Gate Minecraft reverse proxy.</help>
+    </field>
+    <field>
+        <id>general.listenAddress</id>
+        <label>Listen Address</label>
+        <type>text</type>
+        <help>IP address Gate will listen on (default: 0.0.0.0).</help>
+    </field>
+    <field>
+        <id>general.listenPort</id>
+        <label>Listen Port</label>
+        <type>text</type>
+        <help>Port Gate will listen on (default: 25565).</help>
+    </field>
+</form>

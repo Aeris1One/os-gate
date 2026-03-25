@@ -1,0 +1,57 @@
+<model>
+    <mount>//OPNsense/Gate</mount>
+    <version>1.0.0</version>
+    <description>Gate Minecraft Reverse Proxy (Lite Mode)</description>
+    <items>
+        <general>
+            <enabled type="BooleanField">
+                <default>0</default>
+                <Required>Y</Required>
+            </enabled>
+            <listenAddress type="TextField">
+                <default>0.0.0.0</default>
+                <Required>Y</Required>
+                <mask>/^[\d\.\:]+$/</mask>
+            </listenAddress>
+            <listenPort type="PortField">
+                <default>25565</default>
+                <Required>Y</Required>
+            </listenPort>
+        </general>
+        <routes>
+            <route type="ArrayField">
+                <enabled type="BooleanField">
+                    <default>1</default>
+                    <Required>Y</Required>
+                </enabled>
+                <host type="HostnameField">
+                    <Required>Y</Required>
+                </host>
+                <backend type="TextField">
+                    <Required>Y</Required>
+                    <mask>/^[\w\.\-\:\,\s\[\]]+$/</mask>
+                </backend>
+                <strategy type="OptionField">
+                    <default>round-robin</default>
+                    <OptionValues>
+                        <round_robin value="round-robin">Round Robin</round_robin>
+                        <random value="random">Random</random>
+                        <least_connections value="least-connections">Least Connections</least_connections>
+                    </OptionValues>
+                </strategy>
+                <proxyProtocol type="BooleanField">
+                    <default>0</default>
+                </proxyProtocol>
+                <fallback type="TextField">
+                    <Required>N</Required>
+                    <mask>/^[\w\.\-\:]*$/</mask>
+                </fallback>
+                <cachePingTTL type="IntegerField">
+                    <default>0</default>
+                    <MinimumValue>0</MinimumValue>
+                    <MaximumValue>86400</MaximumValue>
+                </cachePingTTL>
+            </route>
+        </routes>
+    </items>
+</model>

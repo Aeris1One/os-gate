@@ -1,0 +1,9 @@
+<acl>
+    <page-services-gate>
+        <name>Services: Gate: Minecraft Proxy</name>
+        <patterns>
+            <pattern>ui/gate/*</pattern>
+            <pattern>api/gate/*</pattern>
+        </patterns>
+    </page-services-gate>
+</acl>

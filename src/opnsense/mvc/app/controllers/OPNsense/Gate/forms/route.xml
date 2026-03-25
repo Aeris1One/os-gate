@@ -1,0 +1,44 @@
+<form>
+    <field>
+        <id>route.enabled</id>
+        <label>Enabled</label>
+        <type>checkbox</type>
+        <help>Enable this route.</help>
+    </field>
+    <field>
+        <id>route.host</id>
+        <label>Host</label>
+        <type>text</type>
+        <help>Minecraft host to match (example: mc.example.com).</help>
+    </field>
+    <field>
+        <id>route.backend</id>
+        <label>Backends</label>
+        <type>text</type>
+        <help>Comma-separated backend servers (example: 10.0.0.10:25565,10.0.0.11:25565).</help>
+    </field>
+    <field>
+        <id>route.strategy</id>
+        <label>Strategy</label>
+        <type>dropdown</type>
+        <help>Backend selection strategy.</help>
+    </field>
+    <field>
+        <id>route.proxyProtocol</id>
+        <label>Proxy Protocol</label>
+        <type>checkbox</type>
+        <help>Enable Proxy Protocol towards backends.</help>
+    </field>
+    <field>
+        <id>route.fallback</id>
+        <label>Fallback</label>
+        <type>text</type>
+        <help>Optional fallback backend endpoint.</help>
+    </field>
+    <field>
+        <id>route.cachePingTTL</id>
+        <label>Cache Ping TTL</label>
+        <type>text</type>
+        <help>Optional ping cache duration in seconds.</help>
+    </field>
+</form>

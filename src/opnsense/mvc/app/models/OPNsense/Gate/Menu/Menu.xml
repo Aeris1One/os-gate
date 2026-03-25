@@ -1,0 +1,7 @@
+<menu>
+    <Services>
+        <Gate VisibleName="Gate Minecraft Proxy" cssClass="fa fa-gamepad" url="/ui/gate" order="200">
+            <General VisibleName="General" url="/ui/gate"/>
+        </Gate>
+    </Services>
+</menu>
